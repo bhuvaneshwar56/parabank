@@ -12,8 +12,11 @@ on:
 jobs:
   build:
 
-    runs-on: macos-lates
-
+    strategy:
+      matrix:
+        platform: [ windows-latest]
+    runs-on: ${{ matrix.platform }}
+    
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 17
