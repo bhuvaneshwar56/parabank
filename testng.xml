@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  >
+<listeners>
+         <listener class-name="com.qa.extentReportListener.ExtentReporter" />
+    </listeners>
+  <test  name="Test" >
+<groups>
+<run>
+<include name="smoke"></include>
+<include name="regression"></include>
+</run></groups>
+    <classes>
+     <class name="com.qa.Test.TcRegPage"/>
+      <class name="com.qa.Test.TchomePage"/>
+      <class name="com.qa.Test.TcAccOverview"/>
+      <class name="com.qa.Test.TcloanRequest"/>
+      <class name="com.qa.Test.TctransFund"/>
+      <class name="com.qa.Test.TcopenNewAcc"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+<!-- 
+
+-->
