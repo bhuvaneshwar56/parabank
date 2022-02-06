@@ -35,7 +35,7 @@ public class baseCLassDecleration {
 		try {
 			FileInputStream ip;	ip = new FileInputStream(
 					System.getProperty("user.dir") + "/src/main/java/com.qa.config/configuration.properties");
-			System.getProperty("./src/main/java/com.qa.config/configuration.properties");
+		//	System.getProperty("./src/main/java/com.qa.config/configuration.properties");
 			
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
