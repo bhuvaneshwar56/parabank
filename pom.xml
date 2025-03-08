@@ -6,6 +6,16 @@
   <artifactId>paraBank</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+
+	 <properties>
+                <sonar.host.url>http://51.20.134.127:9980/</sonar.host.url>
+                <sonar.login>admin</sonar.login>
+                <sonar.password>Test@123</sonar.password>
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <maven.compiler.source>11</maven.compiler.source>
+                <maven.compiler.target>11</maven.compiler.target>
+        </properties>
+	
  <dependencies>
 <dependency>
   <groupId>org.projectlombok</groupId>
